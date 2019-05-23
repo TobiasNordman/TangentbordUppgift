@@ -1,0 +1,119 @@
+/*Här stylar jag mina knappar*/
+/* "*{}" används för att ändra startvärden för alla klasser och idn så att allt har samma startvärden (0) */
+*{
+  padding: 0vh, 0vw, 0vh, 0vw;
+  margin: 0vh, 0vw, 0vh, 0vw;
+  text-align: center;
+}
+#tang{
+  width: 75vw;
+  height: 47.4vh;
+  padding: 1vh 0.85vw 1vh 0.4vw;
+  margin: 40vh 10vw 0vh 10vw;
+  border: 1vh 1vw 1vh 1vw;
+  border-color: black;
+  border-style: solid;
+}
+.Fkeys{
+  float: left;
+  width: 4.485vw;
+  height: 5.85vh;
+  margin: 0vh 0vw 0.7vh 0.2vw;
+  color: white;
+  background-color: black;
+}
+.Keys{
+  float: left;
+  width: 4vw;
+  height: 7.5vh;
+  margin: 0vh 0.7vw 0.7vh 0.2vw;
+  color: white;
+  background-color: black;
+}
+.FuncKeys{
+  float: left;
+  width: 4vw;
+  height: 8vh;
+  margin: 0vh 0.8vw 0.7vh 0.2vw;
+  color: white;
+  background-color: black;
+}
+#Fn{
+  float: left;
+  width: 4vw;
+  height: 8vh;
+  margin: 0vh 0.8vw 0.7vh 0.2vw;
+  color: #4295F4;
+  background-color: black;
+}
+#Enter{
+  float: right;
+  width: 5.35vw;
+  height: 15.7vh;
+  margin: 0vh 0vw 0.7vh 0.2vw;
+  color: white;
+  background-color: black;
+}
+.Special1{
+  float: left;
+  width: 8vw;
+  height: 7.5vh;
+  margin: 0vh 0.8vw 0.7vh 0.2vw;
+  color: white;
+  background: black;
+}
+.Special2{
+  float: left;
+  width: 9vw;
+  height: 7.5vh;
+  margin: 0vh 0.7vw 0.7vh 0.2vw;
+  color: white;
+  background: black;
+}
+.Special3{
+  float: left;
+  width: 7vw;
+  height: 7.5vh;
+  margin: 0vh 0.8vw 0.7vh 0.2vw;
+  color: white;
+  background: black;
+}
+#ShiftRight{
+  float: left;
+  width: 12.9vw;
+  height: 7.5vh;
+  margin: 0vh 0vw 0.7vh 0.2vw;
+  color: white;
+  background: black;
+}
+#Space{
+  float: left;
+  width: 24vw;
+  height: 8vh;
+  margin: 0vh 0.8vw 0.7vh 0.2vw;
+  color: white;
+  background: black;
+  content: "";
+}
+#Backspace{
+  float: left;
+  width: 11vw;
+  height: 7.5vh;
+  margin: 0vh -1vw 0.7vh 0.2vw;
+  color: white;
+  background: black;
+}
+#arrows{
+  float: left;
+  width: 17vw;
+  height: 8vh;
+  margin: 0vh -2vw 0vh 0.2vw;
+}
+.arrowkeys{
+  float: left;
+  width: 5.3vw;
+  height: 3.5vh;
+  margin: 0vh 0vw 0.9vh 0.2775vw;
+  color: white;
+  background-color: black;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--Här säger jag åt programmet vilket språk hemsidan ska vara i-->
+<html lang="sv">
+<!--I head har jag de funktioner som inte ska visas på sidan direkt-->
+  <head>
+<!--Här väljer jag character encoding för min hemsida-->
+    <meta charset="utf-8">
+<!--
+  Här säger jag åt programmet vilket namn hemsidan ska ha
+  (visas längst upp på fliken av sidan)
+-->
+    <title> Tangentbord </title>
+<!--Här länkar jag till min css fil, så att jag kan styla om min hemsida-->
+    <link rel="stylesheet" href="Tangentbord.css">
+  </head>
+<!--I body har jag de funktioner som ska visa -->
+  <body>
+<!--Här startar jag ett javascript -->
+    <script>
+//här använder jag mig av document onkeydown för att skapa en funktion
+//denna funktion läser tangentbordets inputs och ändrar sedan färg på tangenterna (till grå)
+      document.onkeydown = function(e)
+      {
+        document.getElementById(e.code).style.backgroundColor = "Gray";
+        document.getElementById(e.code).style.color = "black";
+      }
+//här använder jag mig av document onkeyup för att skapa en funktion
+//denna funktion läser tangentbordets inputs och ändrar sedan färg på tangenterna till originalfärgen (som i mitt fall var svart)
+      document.onkeyup = function(e)
+      {
+        document.getElementById(e.code).style.backgroundColor = "Black";
+        document.getElementById(e.code).style.color = "white";
+      }
+    </script>
+
+<!--Denna div använder jag för att styra placeringen av tangentbordet-->
+    <div id="tang">
+<!--
+  De här divvarna finns enbart för lättläslighetens skull
+  (Detta gäller för alla raders divvar)
+-->
+      <div id="Row1">
+<!--
+  Dessa divvar är då tangenterna, deras klasser är gjorda för utseendets skull,
+  deras id är gjorda för att event keycode ska fungera som det ska
+  (Detta gäller för alla tangentdivvar)
+-->
+        <div class="Fkeys" id="Escape">Esc</div>
+        <div class="Fkeys" id="F1">F1</div>
+        <div class="Fkeys" id="F2">F2</div>
+        <div class="Fkeys" id="F3">F3</div>
+        <div class="Fkeys" id="F4">F4</div>
+        <div class="Fkeys" id="F5">F5</div>
+        <div class="Fkeys" id="F6">F6</div>
+        <div class="Fkeys" id="F7">F7</div>
+        <div class="Fkeys" id="F8">F8</div>
+        <div class="Fkeys" id="F9">F9</div>
+        <div class="Fkeys" id="F10">F10</div>
+        <div class="Fkeys" id="F11">F11</div>
+        <div class="Fkeys" id="F12">F12</div>
+        <div class="Fkeys" id="PrtScr">PrtScr</div>
+        <div class="Fkeys" id="Insert">Insert</div>
+        <div class="Fkeys" id="Delete">Delete</div>
+      </div> <br>
+
+      <div id="Row2">
+        <div class="Keys" id="Backquote">§</div>
+        <div class="Keys" id="Digit1">1</div>
+        <div class="Keys" id="Digit2">2</div>
+        <div class="Keys" id="Digit3">3</div>
+        <div class="Keys" id="Digit4">4</div>
+        <div class="Keys" id="Digit5">5</div>
+        <div class="Keys" id="Digit6">6</div>
+        <div class="Keys" id="Digit7">7</div>
+        <div class="Keys" id="Digit8">8</div>
+        <div class="Keys" id="Digit9">9</div>
+        <div class="Keys" id="Digit0">0</div>
+        <div class="Keys" id="Minus">+</div>
+        <div class="Keys" id="Equal">´</div>
+        <div id="Backspace">←</div>
+      </div> <br>
+
+      <div id="Row3">
+        <div class="Special1" id="Tab">Tab</div>
+        <div class="Keys" id="KeyQ">Q</div>
+        <div class="Keys" id="KeyW">W</div>
+        <div class="Keys" id="KeyE">E</div>
+        <div class="Keys" id="KeyR">R</div>
+        <div class="Keys" id="KeyT">T</div>
+        <div class="Keys" id="KeyY">Y</div>
+        <div class="Keys" id="KeyU">U</div>
+        <div class="Keys" id="KeyI">I</div>
+        <div class="Keys" id="KeyO">O</div>
+        <div class="Keys" id="KeyP">P</div>
+        <div class="Keys" id="BracketLeft">Å</div>
+        <div class="Keys" id="BracketRight">¨</div>
+        <div id="Enter">Enter</div>
+      </div> <br>
+
+      <div id="Row4">
+        <div class="Special2" id="CapsLock">Caps</div>
+        <div class="Keys" id="KeyA">A</div>
+        <div class="Keys" id="KeyS">S</div>
+        <div class="Keys" id="KeyD">D</div>
+        <div class="Keys" id="KeyF">F</div>
+        <div class="Keys" id="KeyG">G</div>
+        <div class="Keys" id="KeyH">H</div>
+        <div class="Keys" id="KeyJ">J</div>
+        <div class="Keys" id="KeyK">K</div>
+        <div class="Keys" id="KeyL">L</div>
+        <div class="Keys" id="Semicolon">Ö</div>
+        <div class="Keys" id="Quote">Ä</div>
+        <div class="Keys" id="Backslash">*</div>
+      </div> <br>
+
+      <div id="Row5">
+        <div class="Special3" id="ShiftLeft">Shift</div>
+        <div class="Keys" id="IntlBackslash"><</div>
+        <div class="Keys" id="KeyZ">Z</div>
+        <div class="Keys" id="KeyX">X</div>
+        <div class="Keys" id="KeyC">C</div>
+        <div class="Keys" id="KeyV">V</div>
+        <div class="Keys" id="KeyB">B</div>
+        <div class="Keys" id="KeyN">N</div>
+        <div class="Keys" id="KeyM">M</div>
+        <div class="Keys" id="Comma">,</div>
+        <div class="Keys" id="Period">.</div>
+        <div class="Keys" id="Slash">-</div>
+        <div id="ShiftRight">Shift</div>
+      </div> <br>
+
+      <div id="Row6">
+        <div class="Special3" id="ControlLeft">Ctrl</div>
+        <div id="Fn">Fn</div>
+        <div class="FuncKeys" id="MetaLeft">Win</div>
+        <div class="FuncKeys" id="AltLeft">Alt</div>
+        <div id="Space"></div>
+        <div class="FuncKeys" id="AltRight">AltGr</div>
+        <div class="FuncKeys" id="ControlRight">Ctrl</div>
+<!--
+  Eftersom dessa 6 knappar behöver få plats i en ruta med rum för 3 vanliga tangenter,
+  måste jag skapa en egen div att dela upp åt dem
+-->
+        <div id="arrows">
+          <div class="arrowkeys" id="PageUp">Page Up</div>
+          <div class="arrowkeys" id="ArrowUp">Up</div>
+          <div class="arrowkeys" id="PageDown">Page Down</div>
+          <div class="arrowkeys" id="ArrowLeft">Left</div>
+          <div class="arrowkeys" id="ArrowDown">Down</div>
+          <div class="arrowkeys" id="ArrowRight">Right</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
